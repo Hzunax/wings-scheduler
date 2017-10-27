@@ -4,5 +4,14 @@
 
 div.timetable{
     position: absolute;
-    top: 80px;
+    //top: 10px;
+}
+
+.div-wings-logo-big{
+    text-align: center;
+}
+
+#img-wings-logo-big{
+    max-width: 80%;
+    max-height: 80%;
 }
