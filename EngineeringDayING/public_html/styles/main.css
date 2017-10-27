@@ -1,0 +1,8 @@
+.mdl-layout--fixed-header>.mdl-layout__header{
+    background-color: #ff6600;
+}
+
+div.timetable{
+    position: absolute;
+    top: 80px;
+}
