@@ -13,35 +13,35 @@
       "Pawel Siwula"
     ],
     "times": [
-     "15:00 - 15:30",
-     "15:30 - 16:00",
-     "16:00 - 16:30",
-     "16:30 - 17:00",
-     "17:00 - 17:30",
-     "17:30 - 18:00"
+      "15:00 - 15:30",
+      "15:30 - 16:00",
+      "16:00 - 16:30",
+      "16:30 - 17:00",
+      "17:00 - 17:30",
+      "17:30 - 18:00"
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
     "id": 2,
     "location": 2,
-    "topic": "1. Virtual Assistant",
-    "baseline": "- Dialog flow building\\n- Callbot architecture deepdive",
+    "topic": "Virtual Assistant",
+    "baseline": "- Dialog flow building </br> - Callbot architecture deepdive",
     "contact": [
-     "Dimitri Fatralis",
-     "Thomas Detry"
+      "Dimitri Fatralis",
+      "Thomas Detry"
     ],
     "times": [
-     "15:00 - 15:45",
-     "16:00 - 16:45",
-     "17:00 - 17:45"
+      "15:00 - 15:45",
+      "16:00 - 16:45",
+      "17:00 - 17:45"
     ],
     "coord": {
-     "x": "25%",
-     "y": "60%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -55,13 +55,13 @@
       "Tripathi, S. (Shivasheesh)"
     ],
     "times": [
-     "15:00 - 16:00",
-     "16:00 - 17:00",
-     "17:00 - 18:00"
+      "15:00 - 16:00",
+      "16:00 - 17:00",
+      "17:00 - 18:00"
     ],
     "coord": {
-     "x": "40%",
-     "y": "70%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -70,18 +70,18 @@
     "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
     "baseline": "",
     "contact": [
-     "Gil De Grove",
-     "Sam Van Hecken",
-     "Aaron Van Hecken",
-     "Cedric Cuypers",
-     "Philippe Lanckvrind"
+      "Gil De Grove",
+      "Sam Van Hecken",
+      "Aaron Van Hecken",
+      "Cedric Cuypers",
+      "Philippe Lanckvrind"
     ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "60%",
-     "y": "20%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -90,15 +90,15 @@
     "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
     "baseline": "",
     "contact": [
-     "Steffi Frison", 
-     "Quentin Vajda"
-   ],
+      "Steffi Frison", 
+      "Quentin Vajda"
+    ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "25%",
-     "y": "40%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -107,16 +107,16 @@
     "topic": "Unisys as a Service",
     "baseline": "",
     "contact": [
-     "Luc Raymenants",
-     "Philippe Leroy",
-     "Georges Colson"
-   ],
+      "Luc Raymenants",
+      "Philippe Leroy",
+      "Georges Colson"
+    ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "50%",
-     "y": "65%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -125,14 +125,14 @@
     "topic": "Excellys wings",
     "baseline": "Learn, network and make an impact as starting engineer",
     "contact": [
-     "Rosalie Dewulf"
-   ],
+      "Rosalie Dewulf"
+    ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "35%",
-     "y": "60%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -141,17 +141,17 @@
     "topic": "Gridgain",
     "baseline": "",
     "contact": [
-     "David Follen",
-     "Frederik Meersschaut"
+      "David Follen",
+      "Frederik Meersschaut"
     ],
     "times": [
-     "15:00 - 15:50",
-     "16:00 - 16:50",
-     "17:00 - 17:50"
+      "15:00 - 15:50",
+      "16:00 - 16:50",
+      "17:00 - 17:50"
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -160,14 +160,14 @@
     "topic": "Testing ",
     "baseline": "",
     "contact": [
-     "Chanumolu Bhargavi"
+      "Chanumolu Bhargavi"
     ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -176,14 +176,14 @@
     "topic": "Test Automation",
     "baseline": "",
     "contact": [
-     "Dafne De Groof"
+      "Dafne De Groof"
     ],
     "times": [
-     
+      
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -192,14 +192,14 @@
     "topic": "Monitoring",
     "baseline": "",
     "contact": [
-     "Lieven Merckx (TBC)"
-   ],
+      "Lieven Merckx (TBC)"
+    ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -208,14 +208,14 @@
     "topic": "TPA - API",
     "baseline": "",
     "contact": [
-     "Patrice Krakow"
+      "Patrice Krakow"
     ],
     "times": [
-     
+      
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -224,14 +224,14 @@
     "topic": "Test Data Management",
     "baseline": "",
     "contact": [
-     "Bart Caris"
+      "Bart Caris"
     ],
     "times": [
-     "free-format"
+      "free-format"
     ],
     "coord": {
-     "x": "15%",
-     "y": "20%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -240,19 +240,19 @@
     "topic": "SFP using Polymer",
     "baseline": "Improving the Salesflow Platform by using The Guide (Polymer)",
     "contact": [
-     "Quentin Maillard"
+      "Quentin Maillard"
     ],
     "times": [
-     "15:00 - 15:30",
-     "15:30 - 16:00",
-     "16:00 - 16:30",
-     "16:30 - 17:00",
-     "17:00 - 17:30",
-     "17:30 - 18:00"
+      "15:00 - 15:30",
+      "15:30 - 16:00",
+      "16:00 - 16:30",
+      "16:30 - 17:00",
+      "17:00 - 17:30",
+      "17:30 - 18:00"
     ],
     "coord": {
-     "x": "25%",
-     "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
   {
@@ -261,14 +261,14 @@
     "topic": "TPA - CCN",
     "baseline": "EventBus, SDP, CC",
     "contact": [
-     "Richard Bras"
+      "Richard Bras"
     ],
     "times": [
-     
+      
     ],
     "coord": {
-     "x": "50%",
-     "y": "20%"
+      "x": 11,
+      "y": 11
     }
   },
   
@@ -278,48 +278,48 @@
     "topic": "Hadoop/Spark & distributed computing @ ING BE",
     "baseline": "",
     "contact": [
-     "Philippe Lanckvrind",
-     "Cedric Cuypers"
+      "Philippe Lanckvrind",
+      "Cedric Cuypers"
     ],
     "times": [
-     "15:10 - 15:55"
+      "15:10 - 15:55"
     ],
     "coord": {
-      "x": "35%",
-      "y": "80%"
+      "x": 11,
+      "y": 11
     }
   },
-   {
+    {
     "id": 17,
     "location": "High table",
     "topic": "Machine Learning @ ING BE",
     "baseline": "",
     "contact": [
-     "Quentin- Emmanuel Vajda"
+      "Quentin- Emmanuel Vajda"
     ],
     "times": [
-     "16:05 - 16:50"
+      "16:05 - 16:50"
     ],
     "coord": {
-     "x": "70%",
-     "y": "10%"
+      "x": 11,
+      "y": 11
     }
   },
-   {
+    {
     "id": 18,
     "location": "High table",
     "topic": "Flink & streaming analytics @ ING BE",
     "baseline": "EventBus, SDP, CC",
     "contact": [
-     "Gil De Grove",
-     "Samuël Van Hecken"
+      "Gil De Grove",
+      "Samuël Van Hecken"
     ],
     "times": [
-     "17:00 - 17:45"
+      "17:00 - 17:45"
     ],
     "coord": {
-     "x": "25%",
-     "y": "15%"
+      "x": 11,
+      "y": 11
     }
   }
- ]
+]

@@ -1,0 +1,70 @@
+.mdl-layout--fixed-header>.mdl-layout__header{
+    background-color: #ff6600;
+}
+
+.grey_header{
+    background-color: rgb(208, 208, 208);
+    color: rgb(118, 118, 118);
+    padding: 0.5em;
+}
+
+.overview_content{
+    padding: 1em;
+}
+
+.topic_content{
+    padding-bottom: 1em;
+
+}
+
+.topic_title{
+    font-size: 1.1em;
+    background-color: rgb(255, 98, 0); 
+    color: #ffffff;
+    padding: 0.3em;
+}
+
+.topic_baseline{
+    padding-left: 1em;
+    font-size: 0.9em;
+}
+
+.visibility{
+    display: none;
+}
+
+.h4_header{
+    padding: 0.3em;
+    background-color: rgb(208, 208, 208);
+    color: rgb(118, 118, 118);
+    font-size: 1.5em;
+}
+
+.h5_header{
+    font-weight: bold;
+    color: rgb(118, 118, 118);
+    text-transform: uppercase;
+    padding-left: 1em;
+    font-size: 1.1em;
+}
+
+.topic_details{
+    padding: 0.7em;
+}
+
+.times_content{
+    padding-left: 3em;
+}
+
+.contacts_content{
+    padding-left: 3em;
+}
+
+.rounded_corners{
+    border: 0.1em solid rgb(208, 208, 208);
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+}
