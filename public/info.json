@@ -1,325 +1,325 @@
 [
- {
-   "id": 1, 
-   "location": 1,
-   "topic": "ING Private Cloud",
-   "baseline": "",
-   "contact": [
-	   "Frederic De Bruyne",
-	   "Jennifer Gravenstijn",
-	   "Amit.Gangapersadsing",
-	   "BIALOZYT, G. (GRZEGORZ)",
-	   "Dick Kleijn",
-	   "Pawel Siwula"
-   ],
-   "times": [
-		"15:00 - 15:30",
-		"15:30 - 16:00",
-		"16:00 - 16:30",
-		"16:30 - 17:00",
-		"17:00 - 17:30",
-		"17:30 - 18:00"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 2,
-   "location": 2,
-   "topic": "1. Virtual Assistant",
-   "baseline": "- Dialog flow building\\n- Callbot architecture deepdive",
-   "contact": [
-		"Dimitri Fatralis",
-		"Thomas Detry"
-   ],
-   "times": [
-		"15:00 - 15:45",
-		"16:00 - 16:45",
-		"17:00 - 17:45"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 3,
-   "location": 3,
-   "topic": "GDP within the CD Pipeline & Docker Containers",
-   "baseline": "Generic Deployment Process",
-   "contact": [
-	   "Hans Christiaens Jonathan",
-	   "SAMUEL CHRISTOPHER",
-	   "Tripathi, S. (Shivasheesh)"
-   ],
-   "times": [
-		"15:00 - 16:00",
-		"16:00 - 17:00",
-		"17:00 - 18:00"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 4,
-   "location": 4,
-   "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
-   "baseline": "",
-   "contact": [
-		"Gil De Grove",
-		"Sam Van Hecken",
-		"Aaron Van Hecken",
-		"Cedric Cuypers",
-		"Philippe Lanckvrind"
-   ],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 5,
-   "location": 5,
-   "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
-   "baseline": "",
-   "contact": [
-		"Steffi Frison", 
-		"Quentin Vajda"
-	],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 6,
-   "location": 6,
-   "topic": "Unisys as a Service",
-   "baseline": "",
-   "contact": [
-		"Luc Raymenants",
-		"Philippe Leroy",
-		"Georges Colson"
-	],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 7,
-   "location": 7,
-   "topic": "Excellys wings",
-   "baseline": "Learn, network and make an impact as starting engineer",
-   "contact": [
-		"Rosalie Dewulf"
-	],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 8,
-   "location": 8,
-   "topic": "Gridgain",
-   "baseline": "",
-   "contact": [
-		"David Follen",
-		"Frederik Meersschaut"
-   ],
-   "times": [
-		"15:00 - 15:50",
-		"16:00 - 16:50",
-		"17:00 - 17:50"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 9,
-   "location": 9,
-   "topic": "Testing ",
-   "baseline": "",
-   "contact": [
-		"Chanumolu Bhargavi"
-   ],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 10,
-   "location": 10,
-   "topic": "Test Automation",
-   "baseline": "",
-   "contact": [
-		"Dafne De Groof"
-   ],
-   "times": [
-		
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 11,
-   "location": 11,
-   "topic": "Monitoring",
-   "baseline": "",
-   "contact": [
-		"Lieven Merckx (TBC)"
-	],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 12,
-   "location": 12,
-   "topic": "TPA - API",
-   "baseline": "",
-   "contact": [
-		"Patrice Krakow"
-   ],
-   "times": [
-		
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 13,
-   "location": 13,
-   "topic": "Test Data Management",
-   "baseline": "",
-   "contact": [
-		"Bart Caris"
-   ],
-   "times": [
-		"free-format"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 14,
-   "location": 14,
-   "topic": "SFP using Polymer",
-   "baseline": "Improving the Salesflow Platform by using The Guide (Polymer)",
-   "contact": [
-		"Quentin Maillard"
-   ],
-   "times": [
-		"15:00 - 15:30",
-		"15:30 - 16:00",
-		"16:00 - 16:30",
-		"16:30 - 17:00",
-		"17:00 - 17:30",
-		"17:30 - 18:00"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- {
-   "id": 15,
-   "location": 15,
-   "topic": "TPA - CCN",
-   "baseline": "EventBus, SDP, CC",
-   "contact": [
-		"Richard Bras"
-   ],
-   "times": [
-		
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
- 
- {
-   "id": 16,
-   "location": "High table",
-   "topic": "Hadoop/Spark & distributed computing @ ING BE",
-   "baseline": "",
-   "contact": [
-		"Philippe Lanckvrind",
-		"Cedric Cuypers"
-   ],
-   "times": [
-		"15:10 - 15:55"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
   {
-   "id": 17,
-   "location": "High table",
-   "topic": "Machine Learning @ ING BE",
-   "baseline": "",
-   "contact": [
-		"Quentin- Emmanuel Vajda"
-   ],
-   "times": [
-		"16:05 - 16:50"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- },
+    "id": 1, 
+    "location": 1,
+    "topic": "ING Private Cloud",
+    "baseline": "",
+    "contact": [
+      "Frederic De Bruyne",
+      "Jennifer Gravenstijn",
+      "Amit.Gangapersadsing",
+      "BIALOZYT, G. (GRZEGORZ)",
+      "Dick Kleijn",
+      "Pawel Siwula"
+    ],
+    "times": [
+      "15:00 - 15:30",
+      "15:30 - 16:00",
+      "16:00 - 16:30",
+      "16:30 - 17:00",
+      "17:00 - 17:30",
+      "17:30 - 18:00"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
   {
-   "id": 18,
-   "location": "High table",
-   "topic": "Flink & streaming analytics @ ING BE",
-   "baseline": "EventBus, SDP, CC",
-   "contact": [
-		"Gil De Grove",
-		"Samuël Van Hecken"
-   ],
-   "times": [
-		"17:00 - 17:45"
-   ],
-   "coord": {
-     "x": 11,
-     "y": 11
-   }
- }
+    "id": 2,
+    "location": 2,
+    "topic": "Virtual Assistant",
+    "baseline": "- Dialog flow building </br> - Callbot architecture deepdive",
+    "contact": [
+      "Dimitri Fatralis",
+      "Thomas Detry"
+    ],
+    "times": [
+      "15:00 - 15:45",
+      "16:00 - 16:45",
+      "17:00 - 17:45"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 3,
+    "location": 3,
+    "topic": "GDP within the CD Pipeline & Docker Containers",
+    "baseline": "Generic Deployment Process",
+    "contact": [
+      "Hans Christiaens Jonathan",
+      "SAMUEL CHRISTOPHER",
+      "Tripathi, S. (Shivasheesh)"
+    ],
+    "times": [
+      "15:00 - 16:00",
+      "16:00 - 17:00",
+      "17:00 - 18:00"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 4,
+    "location": 4,
+    "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
+    "baseline": "",
+    "contact": [
+      "Gil De Grove",
+      "Sam Van Hecken",
+      "Aaron Van Hecken",
+      "Cedric Cuypers",
+      "Philippe Lanckvrind"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 5,
+    "location": 5,
+    "topic": "Big Data, Machine Learning, Neural Networks/Deep Learning",
+    "baseline": "",
+    "contact": [
+      "Steffi Frison", 
+      "Quentin Vajda"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 6,
+    "location": 6,
+    "topic": "Unisys as a Service",
+    "baseline": "",
+    "contact": [
+      "Luc Raymenants",
+      "Philippe Leroy",
+      "Georges Colson"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 7,
+    "location": 7,
+    "topic": "Excellys wings",
+    "baseline": "Learn, network and make an impact as starting engineer",
+    "contact": [
+      "Rosalie Dewulf"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 8,
+    "location": 8,
+    "topic": "Gridgain",
+    "baseline": "",
+    "contact": [
+      "David Follen",
+      "Frederik Meersschaut"
+    ],
+    "times": [
+      "15:00 - 15:50",
+      "16:00 - 16:50",
+      "17:00 - 17:50"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 9,
+    "location": 9,
+    "topic": "Testing ",
+    "baseline": "",
+    "contact": [
+      "Chanumolu Bhargavi"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 10,
+    "location": 10,
+    "topic": "Test Automation",
+    "baseline": "",
+    "contact": [
+      "Dafne De Groof"
+    ],
+    "times": [
+      
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 11,
+    "location": 11,
+    "topic": "Monitoring",
+    "baseline": "",
+    "contact": [
+      "Lieven Merckx (TBC)"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 12,
+    "location": 12,
+    "topic": "TPA - API",
+    "baseline": "",
+    "contact": [
+      "Patrice Krakow"
+    ],
+    "times": [
+      
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 13,
+    "location": 13,
+    "topic": "Test Data Management",
+    "baseline": "",
+    "contact": [
+      "Bart Caris"
+    ],
+    "times": [
+      "free-format"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 14,
+    "location": 14,
+    "topic": "SFP using Polymer",
+    "baseline": "Improving the Salesflow Platform by using The Guide (Polymer)",
+    "contact": [
+      "Quentin Maillard"
+    ],
+    "times": [
+      "15:00 - 15:30",
+      "15:30 - 16:00",
+      "16:00 - 16:30",
+      "16:30 - 17:00",
+      "17:00 - 17:30",
+      "17:30 - 18:00"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  {
+    "id": 15,
+    "location": 15,
+    "topic": "TPA - CCN",
+    "baseline": "EventBus, SDP, CC",
+    "contact": [
+      "Richard Bras"
+    ],
+    "times": [
+      
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+  
+  {
+    "id": 16,
+    "location": "High table",
+    "topic": "Hadoop/Spark & distributed computing @ ING BE",
+    "baseline": "",
+    "contact": [
+      "Philippe Lanckvrind",
+      "Cedric Cuypers"
+    ],
+    "times": [
+      "15:10 - 15:55"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+    {
+    "id": 17,
+    "location": "High table",
+    "topic": "Machine Learning @ ING BE",
+    "baseline": "",
+    "contact": [
+      "Quentin- Emmanuel Vajda"
+    ],
+    "times": [
+      "16:05 - 16:50"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  },
+    {
+    "id": 18,
+    "location": "High table",
+    "topic": "Flink & streaming analytics @ ING BE",
+    "baseline": "EventBus, SDP, CC",
+    "contact": [
+      "Gil De Grove",
+      "Samuël Van Hecken"
+    ],
+    "times": [
+      "17:00 - 17:45"
+    ],
+    "coord": {
+      "x": 11,
+      "y": 11
+    }
+  }
 ]
