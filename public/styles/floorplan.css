@@ -53,9 +53,30 @@
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {
-    padding: 2px 16px;
+    padding: 1px 16px;
     background-color: #ff6600;
     color: white;
+    justify-content: left;
+    padding-top:10px; 
+    padding-bottom:10px;
+}
+
+.map {
+    position: relative;
+    margin: auto;
+    z-index:98; 
+    max-height:100%; 
+    max-width:100%; 
+    width: 95%; 
+    height : auto; 
+    object-fit: contain;
+}
+
+.marker {
+    height : 3em;
+    width  : 3em;
+    position : absolute;   
+    z-index : 99; 
 }
 
 /* Add Animation */

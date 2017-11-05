@@ -77,15 +77,15 @@
                                                 </div>
                                                 <div class="modal-body" id="modalBody">        </div>
                                                 <div class="modal-footer">                        
-                                                    <h6>Schedule: </h6>
-                                                    <h5 id="modalFooter"></h5>
+                                                    <h6 style= "margin-top:10px; margin-bottom:10px;">Schedule: </h6>
+                                                    <div id="modalFooter"></div>
                                                 </div>
                                             </div>
                                                 
                                         </div>
                                         
                                         <div id="mapContainer"  style="position: relative;">                                                                                 
-                                            <img src="resources/map.svg" alt="Floorplan"  id="map"  style=" position: relative; margin: auto; z-index:98; max-height:100%; max-width:100%; width: 95%; height : auto; object-fit: contain" > 
+                                            <img src="resources/map.svg" alt="Floor map"  id="map" class="map"> 
                                         </div>
                                     </div>
                             
@@ -170,9 +170,9 @@
                             if(scheduleTimes == '')
                                 scheduleTimes = element;
                             else 
-                                scheduleTimes = scheduleTimes + ', ' + element;
+                                scheduleTimes = scheduleTimes + ' <br> ' + element;
                         });
-                        $("#modalFooter").text(scheduleTimes);
+                        $("#modalFooter").html(scheduleTimes);
                     }
                     }
                 }
@@ -188,14 +188,14 @@
                 marker.setAttribute('class', 'marker');
                 marker.setAttribute('id', id);
 
-                marker.style.height = "3em";
-                marker.style.width = "3em";
+                // marker.style.height = "3em";
+                // marker.style.width = "3em";
 
-                marker.style.position = "absolute";
+                // marker.style.position = "absolute";
                 marker.style.left = x;
                 marker.style.top = y;
                 
-                marker.style.zIndex = "99"; 
+                // marker.style.zIndex = "99"; 
 
                 marker.onclick= popup;            
                 document.getElementById("mapContainer").appendChild(marker);    
