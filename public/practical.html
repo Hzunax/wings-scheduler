@@ -28,7 +28,6 @@
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
@@ -73,7 +72,7 @@
 
                         <img src="img/tour.png"> 
 
-                        <div id="map" style="width:400px;height:400px;background:yellow"></div>
+                        <div id="map" style="height: 10em;background:yellow; margin-top: 1em; "></div>
 
                         <h5 class="h5_header"> How to get there? </h5> 
 
@@ -92,7 +91,7 @@
                             </div>
 
                             <div class="means">
-                                Bus - STIB:
+                                Bus - STIB
                                 <div id="stib_lines">
                                     <div class="line">
                                         <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
@@ -107,7 +106,7 @@
                             </div>
 
                             <div class="means">
-                                Bus - De Lijn:
+                                Bus - De Lijn
                                 <div id="lijn_lines">
                                     <div class="line">
                                         <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
@@ -128,7 +127,7 @@
                             </div>
 
                             <div class="means">
-                                Train:
+                                Train
                                 <div class="line">
                                     North Station
                                 </div>
@@ -148,14 +147,14 @@
             <script>
                 function myMap() {
                     var mapOptions = {
-                        center: new google.maps.LatLng(51.5, -0.12),
-                        zoom: 10,
+                        center: new google.maps.LatLng(50.8641252, 4.3475654),
+                        zoom: 16,
                         mapTypeId: google.maps.MapTypeId.HYBRID
                     }
                 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
                 } 
             </script>
-            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6kuhyoT-rtyejkEq7u99dOYWThO6Stw&callback=myMap"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

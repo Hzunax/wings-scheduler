@@ -1,10 +1,11 @@
 .means{
     padding-left: 2em;
-    font-size: 1.2em;
+    font-size: 1.1  em;
 }
 
 .line{
     padding: 0.1em 2em 0.1em 2em;
     display: block;
     color: rgb(118, 118, 118);
+    font-size: 0.8em;
 }
