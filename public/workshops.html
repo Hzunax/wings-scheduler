@@ -15,6 +15,7 @@
 		<!-- Overview CSS -->
         <link rel="stylesheet" href="styles/overview.css">
 
+
         <!-- Timetable CSS -->
         <link rel="stylesheet" href="styles/timetablejs.css">
         <link rel="stylesheet" href="styles/demo.css">
@@ -66,39 +67,77 @@
             </div>
             <main class="mdl-layout__content">
                 <div class="page-content">
+				
+                            <h5 class="h5_header" onclick="toggleVisibility('highTable')"> High table </h5> 
+                                <div id="highTable"> </div>
+                            <h5 class="h5_header" onclick="toggleVisibility('workshops')"> Workshops </h5>
+                                <div id="workshops"> </div>
+                                
+                            <script>
+                                $(function() {
+                                var topics = [];
+                                $.getJSON("info.json", function(data) {
+                                    
+                                    console.log(data);
+                                    $.each(data, function(i, f) {
+                                                                                            
+                                        var location = f.location == "High table" ? "" : "Corner ";
 
-                    <div class="overview_boxes">
-                        <div class="overview_box">
-                            <a href="schedule.html" >
-                                <img src="img/workshops.png">
-                                <div class="text_box">
-                                    15:00 &emsp; Workshops 
-                                </div>
-                            </a>
-                        </div>
-                        <div class="overview_box">
-                            <img src="img/apero.png"> 
-                            <div class="text_box">
-                                18:00  &emsp;    Apero-Concert 
-                            </div>
-                        </div>
-                        <div class="overview_box">
-                            <img src="img/dinner.png">
-                            <div class="text_box">
-                                19:15 &emsp;    Dinner 
-                            </div>
-                        </div>                                       
-                        <div class="overview_box">
-                            <img src="img/party.png">
-                            <div class="text_box">
-                                21:00 &emsp;    ITS PARTY with DJ Rocky 
-                            </div>
-                        </div>
+                                        var times = "free-format";
+                                        if (f.times != "free-format"){
+                                            times = ""
+                                            for (time in f.times){
+                                                times += f.times[time] + "</br>";
+                                            }
+                                        }
+                                        var contacts="";
+                                        for (contact in f.contact){
+                                                contacts += f.contact[contact] + "</br>";
+                                            }
 
-                    </div>
-                </div>
+                                        var content = "<div class='topic_content' onclick=toggleVisibility('topic"+i+"')>" +
+                                                        "<div class='topic_title'>" + 
+                                                            f.topic + 
+                                                        "</div>" + 
+                                                        "<div class='topic_baseline'>" + 
+                                                            f.baseline + 
+                                                        "</div>" +
+                                                        "<div id='topic"+i+"' class='visibility topic_details rounded_corners'>" +
+                                                            "<div class=location>" + 
+                                                                "Location: " + location + f.location + 
+                                                            "</div>" +
+                                                            "<div class=times>" + 
+                                                                "Times: " + 
+                                                                "<div class=times_content>" + times + "</div>" +
+                                                            "</div>" +
+                                                            "<div class=contacts>" + 
+                                                                "Contacts: " + 
+                                                                "<div class=contacts_content>" + contacts + "</div>" +
+                                                            "</div>" +
+                                                        "</div>" +
+                                                    "</div>";
 
-            </main>					
+                                        if (f.location == "High table")
+                                            $(content).appendTo("#highTable");
+                                        else
+                                            $(content).appendTo("#workshops");                                                  
+                                    });
+                                });
+                                });
+
+                            </script>
+                        </div>
+				</div>
+            </main>
+        </div>
+
+        <script>
+            function toggleVisibility(elementID) {
+                var elem = document.getElementById(elementID);
+                var display = elem.style.display;
+                elem.style.display = display == "block" ? 'none' : "block";
+}
+        </script>
 
         <!-- Overview -->
 
