@@ -23,6 +23,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 
         <!-- Material Design Lite -->
@@ -66,6 +67,22 @@
                     <!-- Timetable JS -->
                     <script src="plugin.js" type="text/javascript"></script>
 
+                    <!-- The Modal -->
+                        <div id="myModal" class="modal">                                        
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="modal-header">                        
+                                    <h4 id="modalHeader">Modal Header</h4>
+                                    <span class="close">&times;</span>
+                                </div>
+                                <div class="modal-body" id="modalBody">        </div>
+                                <div class="modal-footer">                        
+                                    <h6 style= "margin-top:10px; margin-bottom:10px;">Schedule: </h6>
+                                    <div id="modalFooter"></div>
+                                </div>
+                            </div>     
+                        </div>
+
                     <div class="timetable"></div>
 
                 </div>
@@ -74,17 +91,118 @@
 
 
         <script>
+
+            /*function loadJsonFile(timetable) {
+                $.getJSON("info.json", function(json) {
+                    info = json;
+                })
+            };*/
+
+
+            // TIMETABLE
+
+            var openDialog = function(number) {
+                this.MyMethod = function () {
+                  alert('It works');
+                }
+                this.MyMethod(); //should now work
+              };
+
+
+
             var timetable = new Timetable();
 
-            timetable.setScope(16, 23)
+            timetable.setScope(15, 18);
 
-            timetable.addLocations(['Booth 1', 'Booth 2', 'Booth 3', 'Blackbox 1', 'Blackbox 2']);
+           // loadJsonFile(timetable);
 
-            timetable.addEvent('WINGS', 'Booth 1', new Date(2017, 11, 14, 16, 30), new Date(2017, 11, 14, 18, 30), {url: 'index.html'});
-            timetable.addEvent('Polymer', 'Booth 1', new Date(2017, 11, 14, 18, 15), new Date(2017, 11, 14, 20, 30), {url: '#'});
-            timetable.addEvent('Chimp testing', 'Booth 2', new Date(2017, 11, 14, 16, 15), new Date(2017, 11, 14, 17, 30), {url: '#'});
-            timetable.addEvent('SAP', 'Booth 2', new Date(2017, 11, 14, 17, 30), new Date(2017, 11, 14, 19, 30), {url: '#'});
-            timetable.addEvent('How to support for the Red Devils as Dutchman', 'Blackbox 1', new Date(2017, 11, 14, 16, 30), new Date(2017, 11, 14, 20, 30), {url: '#'});
+
+            timetable.addLocations(['Corner 1', 'Corner 2', 'Corner 3', 'Corner 4', 'Corner 5','Corner 6', 'Corner 7', 'Corner 8', 'Corner 9', 'Corner 10', 'Corner 11', 'Corner 12', 'Corner 13', 'Corner 14']);
+
+            
+            
+            //Corner 1
+            timetable.addEvent('ING Private Cloud', 'Corner 1', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+
+            //Corner 2
+            timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+            timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 16, 00), 
+                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+            timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+
+            //Corner 3
+            timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+            timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 16, 00), 
+                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+            timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+             
+             //Corner 4
+            timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 4', new Date(2017, 11, 14, 15, 10), 
+                new Date(2017, 11, 14, 15, 55), {ModalId: 4});
+            timetable.addEvent('Machine Learning', 'Corner 4', new Date(2017, 11, 14, 16, 05), 
+                new Date(2017, 11, 14, 16, 50), {ModalId: 4});
+            timetable.addEvent('Flink & streaming analytics', 'Corner 4', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 45), {ModalId: 4});
+
+             //Corner 5
+            timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 5', new Date(2017, 11, 14, 15, 10), 
+                new Date(2017, 11, 14, 15, 55), {ModalId: 5});
+            timetable.addEvent('Machine Learning', 'Corner 5', new Date(2017, 11, 14, 16, 05), 
+                new Date(2017, 11, 14, 16, 50), {ModalId: 5});
+            timetable.addEvent('Flink & streaming analytics', 'Corner 5', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 45), {ModalId: 5});
+
+
+             //Corner 6
+             timetable.addEvent('Unisys as a Service', 'Corner 6', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+
+
+             //Corner 7
+             timetable.addEvent('Exellys WINGS', 'Corner 7', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+
+
+            //Corner 8
+            timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 15, 50), {ModalId: 1});
+            timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 16, 00), 
+                new Date(2017, 11, 14, 16, 50), {ModalId: 1});
+            timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 50), {ModalId: 1});
+
+            //Corner 9
+             timetable.addEvent('Testing', 'Corner 9', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+
+            //Corner 10
+            timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+            timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 16, 00), 
+                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+            timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 17, 00), 
+                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+
+            //Corner 11
+             timetable.addEvent('Monitoring', 'Corner 11', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 11});
+
+             //Corner 12
+             timetable.addEvent('TPA-API', 'Corner 12', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 12});
+
+             //Corner 13
+             timetable.addEvent('Test Data Management', 'Corner 13', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 13});
+
+             //Corner 14
+             timetable.addEvent('SFP using Polymer', 'Corner 14', new Date(2017, 11, 14, 15, 00), 
+                new Date(2017, 11, 14, 18, 00), {ModalId: 14});
 
 
             /*timetable.setScope(9, 3)
@@ -104,24 +222,77 @@
              */
             var renderer = new Timetable.Renderer(timetable);
             renderer.draw('.timetable');
-        </script>
+        
+            
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function (b, o, i, l, e, r) {
-                b.GoogleAnalyticsObject = l;
-                b[l] || (b[l] =
-                        function () {
-                            (b[l].q = b[l].q || []).push(arguments)
+
+            //MODAL
+
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            var info;
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+                        
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+                ModalId = 0;
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                    ModalId = 0;
+                }
+            }       
+
+/*
+            //function that reads the info.json file 
+            function loadJsonFile(timetable) {
+                $.getJSON("info.json", function(json) {
+                    arrayIDs = [];
+                    info = json;
+                    json.forEach(function(element) {
+                        //arrayIDs.push(element.id.toString());
+                        if($.inArray(element.id, arrayIDs) != -1){
+                            arrayIDs.push(element.id.toString());
+                        }                       
+                    });
+                    timetable.addLocations(arrayIDs);           
+                });
+            };*/
+            
+
+
+            //function that sets the modal text based on the timeslot pressed
+            function popup(id) {     
+
+                var numId = id;
+                for(var i = 0, length = info.length; i < length; i++) {
+                    {
+                    if(info[i].id == numId)
+                    {                    
+                        $("#modalHeader").text(info[i].topic);
+                        $("#modalBody").text(info[i].baseline);
+                        console.log(info[i].times);
+                        var scheduleTimes = '';
+                        info[i].times.forEach(function(id) {
+                            if(scheduleTimes == '')
+                                scheduleTimes = element;
+                            else 
+                                scheduleTimes = scheduleTimes + ' <br> ' + element;
                         });
-                b[l].l = +new Date;
-                e = o.createElement(i);
-                r = o.getElementsByTagName(i)[0];
-                e.src = '//www.google-analytics.com/analytics.js';
-                r.parentNode.insertBefore(e, r)
-            }(window, document, 'script', 'ga'));
-            ga('create', 'UA-37417680-5');
-            ga('send', 'pageview');
+                        $("#modalFooter").html(scheduleTimes);
+                    }
+                    }
+                }
+                modal.style.display = "block";
+            };
+
         </script>
 
     </body>
