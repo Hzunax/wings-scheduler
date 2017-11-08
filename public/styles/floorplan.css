@@ -73,8 +73,8 @@
 }
 
 .marker {
-    height : 3em;
-    width  : 3em;
+    height : 8%;
+    width  : 11%;
     position : absolute;   
     z-index : 99; 
 }

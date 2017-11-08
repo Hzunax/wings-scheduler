@@ -146,8 +146,9 @@
                 
                 $.getJSON("info.json", function(json) {
                     info = json;
-                    json.forEach(function(element) {                        
-                        generateMarker(element.coord.x, element.coord.y,element.id.toString());
+                    json.forEach(function(element) {   
+                        if(element.coord.x && element.coord.y  )                     
+                            generateMarker(element.coord.x, element.coord.y,element.id.toString());
 
                     });                    
                 });
@@ -182,7 +183,7 @@
             //function that creates a marker based on the coordinates and id
             function generateMarker(x, y, id) {
                 var marker = document.createElement("img");
-                marker.src='resources/marker.png';
+                marker.src='resources/marker.svg';
                 marker.setAttribute('alt', 'marker');
                 marker.setAttribute('class', 'marker');
                 marker.setAttribute('id', id);
