@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Floor plan</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="styles/main.css">
+
+        
+        <!-- Overview CSS -->
+        <link rel="stylesheet" href="styles/overview.css">
+
+
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>             
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+                <!-- Material Design Lite -->
+                <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+                <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+                <!-- Material Design icon font -->
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+                <!-- Always shows a header, even in smaller screens. -->
+                <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                    <header class="mdl-layout__header">
+                        <div class="mdl-layout__header-row">
+        
+                            <!-- Title -->
+                            <span class="mdl-layout-title">Engineering day</span>
+                            <!-- Add spacer, to align navigation to the right -->
+                            <div class="mdl-layout-spacer"></div>
+                            <!-- Navigation. We hide it in small screens. -->
+                            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                                <a class="mdl-navigation__link" href="index.html">Home</a>
+                                <a class="mdl-navigation__link" href="schedule.html">Schedule</a>
+                                <a class="mdl-navigation__link" href="floorplan.html">Floorplan</a>
+                                <a class="mdl-navigation__link" href="twitter.html">Twitter</a>       
+                                <a class="mdl-navigation__link" href="practical.html">Practical</a> 
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="mdl-layout__drawer">
+                        <span class="mdl-layout-title">Engineering day</span>
+                        <nav class="mdl-navigation">
+                            <a class="mdl-navigation__link" href="index.html">Home</a>
+                            <a class="mdl-navigation__link" href="schedule.html">Schedule</a>
+                            <a class="mdl-navigation__link" href="floorplan.html">Floorplan</a>
+                            <a class="mdl-navigation__link" href="twitter.html">Twitter</a>
+                            <a class="mdl-navigation__link" href="practical.html">Practical</a>
+                        </nav>
+                    </div>
+
+            <main class="mdl-layout__content">
+                <div class="page-content">
+				
+                            <h5 class="h5_header" onclick="toggleVisibility('highTable')"> High table </h5> 
+                                <div id="highTable"> </div>
+                            <h5 class="h5_header" onclick="toggleVisibility('workshops')"> Workshops </h5>
+                                <div id="workshops"> </div>
+                                
+                            <script>
+                                $(function() {
+                                var topics = [];
+                                $.getJSON("info.json", function(data) {
+                                    
+                                    $.each(data, function(i, f) {
+                                                                                            
+                                        var location = f.location == "High table" ? "" : "Corner ";
+
+                                        var times = "free-format";
+                                        if (f.times != "free-format"){
+                                            times = ""
+                                            for (time in f.times){
+                                                times += f.times[time] + "</br>";
+                                            }
+                                        }
+                                        var contacts="";
+                                        for (contact in f.contact){
+                                                contacts += f.contact[contact] + "</br>";
+                                            }
+
+                                        var content = "<div class='topic_content' onclick=toggleVisibility('topic"+i+"')>" +
+                                                        "<div class='topic_title'>" + 
+                                                            f.topic + 
+                                                        "</div>" + 
+                                                        "<div class='topic_baseline'>" + 
+                                                            f.baseline + 
+                                                        "</div>" +
+                                                        "<div id='topic"+i+"' class='visibility topic_details rounded_corners'>" +
+                                                            "<div class=location>" + 
+                                                                "Location: " + location + f.location + 
+                                                            "</div>" +
+                                                            "<div class=times>" + 
+                                                                "Times: " + 
+                                                                "<div class=times_content>" + times + "</div>" +
+                                                            "</div>" +
+                                                            "<div class=contacts>" + 
+                                                                "Contacts: " + 
+                                                                "<div class=contacts_content>" + contacts + "</div>" +
+                                                            "</div>" +
+                                                        "</div>" +
+                                                    "</div>";
+
+                                        if (f.location == "High table")
+                                            $(content).appendTo("#highTable");
+                                        else
+                                            $(content).appendTo("#workshops");                                                  
+                                    });
+                                });
+                                });
+
+                            </script>
+                        </div>
+				</div>
+            </main>
+        </div>
+
+        <script>
+            function toggleVisibility(elementID) {
+                var elem = document.getElementById(elementID);
+                var display = elem.style.display;
+                elem.style.display = display == "block" ? 'none' : "block";
+}
+        </script>
+
+        <!-- Overview -->
+
+
+
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                        function () {
+                            (b[l].q = b[l].q || []).push(arguments)
+                        });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-37417680-5');
+            ga('send', 'pageview');
+        </script>
+
+    </body>
+</html>

@@ -68,3 +68,22 @@
     margin-right: 1em;
 
 }
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.workshop{
+    align-content: center;
+}
+
+.overview_box{
+    color: #ffffff;
+}
+
+.text_box{
+    font-size: 1.3em;
+    background-color: rgb(255, 98, 0); 
+    padding: 0.5em 0 0.5em 0.5em;
+}

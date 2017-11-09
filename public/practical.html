@@ -15,6 +15,10 @@
 		<!-- Overview CSS -->
         <link rel="stylesheet" href="styles/overview.css">
 
+        
+        <!-- Practical CSS -->
+        <link rel="stylesheet" href="styles/practical.css">
+
         <!-- Timetable CSS -->
         <link rel="stylesheet" href="styles/timetablejs.css">
         <link rel="stylesheet" href="styles/demo.css">
@@ -66,43 +70,91 @@
             <main class="mdl-layout__content">
                 <div class="page-content">
 
-                    <div class="overview_boxes">
-                        <div class="overview_box">
-                            <a href="schedule.html" >
-                                <img src="img/workshops.png">
-                                <div class="text_box">
-                                    15:00 &emsp; Workshops 
-                                </div>
-                            </a>
-                        </div>
-                        <div class="overview_box">
-                            <img src="img/apero.png"> 
-                            <div class="text_box">
-                                18:00  &emsp;    Apero-Concert 
-                            </div>
-                        </div>
-                        <div class="overview_box">
-                            <img src="img/dinner.png">
-                            <div class="text_box">
-                                19:15 &emsp;    Dinner 
-                            </div>
-                        </div>                                       
-                        <div class="overview_box">
-                            <img src="img/party.png">
-                            <div class="text_box">
-                                21:00 &emsp;    ITS PARTY with DJ Rocky 
-                            </div>
-                        </div>
+                        <img src="img/tour.png"> 
 
-                    </div>
+                        <div id="map" style="height: 10em;background:yellow; margin-top: 1em; "></div>
+
+                        <h5 class="h5_header"> How to get there? </h5> 
+
+                            <div class="means">
+                                Subway
+                                <div class="line">
+                                    <b>Line</b>: 2 & 6 - <b>Station</b>: Yser
+                                </div>
+                            </div>
+
+                            <div class="means">
+                                Tram
+                                <div class="line">
+                                    <b>Line</b>: 51 - <b>Stop</b>: Sainctelette
+                                </div>
+                            </div>
+
+                            <div class="means">
+                                Bus - STIB
+                                <div id="stib_lines">
+                                    <div class="line">
+                                        <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
+                                    </div>
+                                    <div class="line">
+                                        <b>Line</b>: 14, 15 - <b>Stop</b>: Tour & Taxis
+                                    </div>
+                                    <div class="line">
+                                        <b>Line</b>: 57, 88 - <b>Stop</b>: Steamers
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="means">
+                                Bus - De Lijn
+                                <div id="lijn_lines">
+                                    <div class="line">
+                                        <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
+                                    </div>
+                                    <div class="line">
+                                        <b>Line</b>: 213, 214, 230, 231, 232, 233, 240, 241, 242, 243, 245, 246, 250, 251, 260 - <b>Stop</b>: Molenbeek St Jean-Ribaucourt
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="means">
+                                Boat: Waterbus
+                                <div id="">
+                                    <div class="line">
+                                        <b>Stop</b>: Sainctelette-Béco
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="means">
+                                Train
+                                <div class="line">
+                                    North Station
+                                </div>
+                            </div>
                 </div>
 
             </main>					
 
-        <!-- Overview -->
+            <script>
+                function toggleVisibility(elementID) {
+                    var elem = document.getElementById(elementID);
+                    var display = elem.style.display;
+                    elem.style.display = display == "block" ? 'none' : "block";
+                }   
+            </script>
 
-
-
+            <script>
+                function myMap() {
+                    var mapOptions = {
+                        center: new google.maps.LatLng(50.8641252, 4.3475654),
+                        zoom: 16,
+                        mapTypeId: google.maps.MapTypeId.HYBRID
+                    }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                } 
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6kuhyoT-rtyejkEq7u99dOYWThO6Stw&callback=myMap"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
