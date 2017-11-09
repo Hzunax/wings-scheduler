@@ -262,7 +262,7 @@ Timetable.Renderer = function(tt) {
                     if(info[i].id == numId)
                     {                    
                         $("#modalHeader").text(info[i].id + ". " + info[i].topic);
-                        $("#modalBody").text(info[i].baseline);
+                        $("#modalBody").html(info[i].baseline);
                         console.log(info[i].times);
                         var scheduleTimes = '';
                         info[i].times.forEach(function(element) {
