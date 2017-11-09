@@ -92,54 +92,92 @@
 
         <script>
 
-            /*function loadJsonFile(timetable) {
-                $.getJSON("info.json", function(json) {
-                    info = json;
-                })
+            //function that sets the modal text based on the timeslot pressed
+            function popup(id) {     
+                var numId = id;
+                for(var i = 0, length = info.length; i < length; i++) {
+                    {
+                    if(info[i].id == numId)
+                    {                    
+                        $("#modalHeader").text(info[i].topic);
+                        $("#modalBody").text(info[i].baseline);
+                        console.log(info[i].times);
+                        var scheduleTimes = '';
+                        info[i].times.forEach(function(id) {
+                            if(scheduleTimes == '')
+                                scheduleTimes = element;
+                            else 
+                                scheduleTimes = scheduleTimes + ' <br> ' + element;
+                        });
+                        $("#modalFooter").html(scheduleTimes);
+                    }
+                    }
+                }
+                modal.style.display = "block";
+            };
+            
+
+            var timeEntries = document.getElementsByClassName("time-entry");
+
+            /*var myFunction = function() {
+                var attribute = this.getAttribute("data-modelid");
+                alert(attribute);
             };*/
 
+            //TODO
+            /*for (var i = 0; i < timeEntries.length; i++) {
+                timeEntries[i].addEventListener('click', function() {
+                    id = parseInt(timeEntries[i].getAttribute("data-modalid"));
+                    popup(id);
+                });   
+              };*/
 
-            // TIMETABLE
+            /*for (var i = 0; i < timeEntries.length; i++) {
+                timeEntries[i].onclick = function(timeEntries, i){
+                    var int = i;
+                    id = parseInt(timeEntries[i].getAttribute("data-modalid"));
+                    popup(id);
+                };
+            };*/
 
-            var openDialog = function(number) {
-                this.MyMethod = function () {
-                  alert('It works');
-                }
-                this.MyMethod(); //should now work
-              };
-
-
-
-            var timetable = new Timetable();
-
-            timetable.setScope(15, 18);
-
-           // loadJsonFile(timetable);
-
-
-            timetable.addLocations(['Corner 1', 'Corner 2', 'Corner 3', 'Corner 4', 'Corner 5','Corner 6', 'Corner 7', 'Corner 8', 'Corner 9', 'Corner 10', 'Corner 11', 'Corner 12', 'Corner 13', 'Corner 14']);
+            //I'm stuck
+            for (var i = 0; i < timeEntries.length; i++) {
+                var int = i;
+                timeEntries[int].click(function(){
+                    popup(parseInt(timeEntries[int].getAttribute("data-modalid")));
+                });
+            };
 
             
+            // TIMETABLE
+            var timetable = new Timetable();
+
+            //Set Start and End time
+            timetable.setScope(15, 18);
+
+
+            //Set locations
+            timetable.addLocations(['Corner 1', 'Corner 2', 'Corner 3', 'Corner 4', 'Corner 5','Corner 6', 'Corner 7', 'Corner 8', 'Corner 9', 'Corner 10', 'Corner 11', 'Corner 12', 'Corner 13', 'Corner 14']);
             
             //Corner 1
             timetable.addEvent('ING Private Cloud', 'Corner 1', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {data: {ModalId: 1}});
 
             //Corner 2
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 2});
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 2});
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 2});
 
             //Corner 3
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 3});
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 3});
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 3});
              
              //Corner 4
             timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 4', new Date(2017, 11, 14, 15, 10), 
@@ -160,33 +198,33 @@
 
              //Corner 6
              timetable.addEvent('Unisys as a Service', 'Corner 6', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 6});
 
 
              //Corner 7
              timetable.addEvent('Exellys WINGS', 'Corner 7', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 7});
 
 
             //Corner 8
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 50), {ModalId: 8});
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 50), {ModalId: 8});
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 50), {ModalId: 8});
 
             //Corner 9
              timetable.addEvent('Testing', 'Corner 9', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 9});
 
             //Corner 10
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 10});
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 10});
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 10});
 
             //Corner 11
              timetable.addEvent('Monitoring', 'Corner 11', new Date(2017, 11, 14, 15, 00), 
@@ -250,48 +288,16 @@
                 }
             }       
 
-/*
-            //function that reads the info.json file 
-            function loadJsonFile(timetable) {
+
+            //function that load the .json file
+            function loadJsonFile() {
                 $.getJSON("info.json", function(json) {
-                    arrayIDs = [];
-                    info = json;
-                    json.forEach(function(element) {
-                        //arrayIDs.push(element.id.toString());
-                        if($.inArray(element.id, arrayIDs) != -1){
-                            arrayIDs.push(element.id.toString());
-                        }                       
-                    });
-                    timetable.addLocations(arrayIDs);           
+                    info = json;                   
                 });
-            };*/
+            }
             
 
-
-            //function that sets the modal text based on the timeslot pressed
-            function popup(id) {     
-
-                var numId = id;
-                for(var i = 0, length = info.length; i < length; i++) {
-                    {
-                    if(info[i].id == numId)
-                    {                    
-                        $("#modalHeader").text(info[i].topic);
-                        $("#modalBody").text(info[i].baseline);
-                        console.log(info[i].times);
-                        var scheduleTimes = '';
-                        info[i].times.forEach(function(id) {
-                            if(scheduleTimes == '')
-                                scheduleTimes = element;
-                            else 
-                                scheduleTimes = scheduleTimes + ' <br> ' + element;
-                        });
-                        $("#modalFooter").html(scheduleTimes);
-                    }
-                    }
-                }
-                modal.style.display = "block";
-            };
+            
 
         </script>
 

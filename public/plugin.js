@@ -5,7 +5,17 @@ var Timetable = function() {
         hourStart: 9,
         hourEnd: 17
     };
-    this.interval = 60;
+
+    if ($(window).width() < 640) {
+        this.interval = 60;
+    }
+    else if($(window).width() < 1200){
+        this.interval = 30;
+    }
+    else{
+        this.interval = 15;
+    }
+    
     this.locations = [];
     this.events = [];
 };
