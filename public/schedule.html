@@ -130,19 +130,19 @@
 
             //Corner 2
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 2});
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 2});
             timetable.addEvent('Virtual Assistant', 'Corner 2', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 2});
 
             //Corner 3
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 3});
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 3});
             timetable.addEvent('Generic Deployment Process', 'Corner 3', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 3});
              
              //Corner 4
             timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 4', new Date(2017, 11, 14, 15, 10), 
@@ -163,33 +163,33 @@
 
              //Corner 6
              timetable.addEvent('Unisys as a Service', 'Corner 6', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 6});
 
 
              //Corner 7
              timetable.addEvent('Exellys WINGS', 'Corner 7', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 7});
 
 
             //Corner 8
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 50), {ModalId: 8});
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 50), {ModalId: 8});
             timetable.addEvent('Gridgain', 'Corner 8', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 50), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 50), {ModalId: 8});
 
             //Corner 9
              timetable.addEvent('Testing', 'Corner 9', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 18, 00), {ModalId: 1});
+                new Date(2017, 11, 14, 18, 00), {ModalId: 9});
 
             //Corner 10
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 15, 00), 
-                new Date(2017, 11, 14, 15, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 15, 45), {ModalId: 10});
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 16, 00), 
-                new Date(2017, 11, 14, 16, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 16, 45), {ModalId: 10});
             timetable.addEvent('Test Automation', 'Corner 10', new Date(2017, 11, 14, 17, 00), 
-                new Date(2017, 11, 14, 17, 45), {ModalId: 1});
+                new Date(2017, 11, 14, 17, 45), {ModalId: 10});
 
             //Corner 11
              timetable.addEvent('Monitoring', 'Corner 11', new Date(2017, 11, 14, 15, 00), 
@@ -272,29 +272,29 @@
 
 
             //function that sets the modal text based on the timeslot pressed
-            function popup(id) {     
+            // function popup(id) {     
 
-                var numId = id;
-                for(var i = 0, length = info.length; i < length; i++) {
-                    {
-                    if(info[i].id == numId)
-                    {                    
-                        $("#modalHeader").text(info[i].topic);
-                        $("#modalBody").text(info[i].baseline);
-                        console.log(info[i].times);
-                        var scheduleTimes = '';
-                        info[i].times.forEach(function(id) {
-                            if(scheduleTimes == '')
-                                scheduleTimes = element;
-                            else 
-                                scheduleTimes = scheduleTimes + ' <br> ' + element;
-                        });
-                        $("#modalFooter").html(scheduleTimes);
-                    }
-                    }
-                }
-                modal.style.display = "block";
-            };
+            //     var numId = id;
+            //     for(var i = 0, length = info.length; i < length; i++) {
+            //         {
+            //         if(info[i].id == numId)
+            //         {                    
+            //             $("#modalHeader").text(info[i].topic);
+            //             $("#modalBody").text(info[i].baseline);
+            //             console.log(info[i].times);
+            //             var scheduleTimes = '';
+            //             info[i].times.forEach(function(id) {
+            //                 if(scheduleTimes == '')
+            //                     scheduleTimes = element;
+            //                 else 
+            //                     scheduleTimes = scheduleTimes + ' <br> ' + element;
+            //             });
+            //             $("#modalFooter").html(scheduleTimes);
+            //         }
+            //         }
+            //     }
+            //     modal.style.display = "block";
+            // };
 
         </script>
 
