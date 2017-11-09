@@ -16,7 +16,8 @@
         <!-- Floorplan CSS -->
         <link rel="stylesheet" href="styles/floorplan.css">
 
-
+        <!-- Modal CSS -->
+        <link rel="stylesheet" href="styles/modal.css">
 
 
     </head>
@@ -162,7 +163,7 @@
                     {
                     if(info[i].id == numId)
                     {                    
-                        $("#modalHeader").text(info[i].topic);
+                        $("#modalHeader").text(info[i].id + ". " + info[i].topic);
                         $("#modalBody").text(info[i].baseline);
                         console.log(info[i].times);
                         var scheduleTimes = '';
