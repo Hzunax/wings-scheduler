@@ -52,110 +52,110 @@
                         <a class="mdl-navigation__link" href="index.html">Home</a>
                         <a class="mdl-navigation__link" href="schedule.html">Schedule</a>
                         <a class="mdl-navigation__link" href="floorplan.html">Floorplan</a>
-                        <a class="mdl-navigation__link" href="twitter.html">Twitter</a>
-                        <a class="mdl-navigation__link" href="practical.html">Practical</a>
+<!--                         <a class="mdl-navigation__link" href="twitter.html">Twitter</a>
+ -->                        <a class="mdl-navigation__link" href="practical.html">Practical</a>
                     </nav>
                 </div>
             </header>
-            <div class="mdl-layout__drawer">
+            <div class="mdl-layout__drawer mdl-layout--small-screen-only">
                 <span class="mdl-layout-title">Engineering day</span>
                 <nav class="mdl-navigation">
                     <a class="mdl-navigation__link" href="index.html">Home</a>
                     <a class="mdl-navigation__link" href="schedule.html">Schedule</a>
                     <a class="mdl-navigation__link" href="floorplan.html">Floorplan</a>
-                    <a class="mdl-navigation__link" href="twitter.html">Twitter</a>
-                    <a class="mdl-navigation__link" href="practical.html">Practical</a>
+<!--                     <a class="mdl-navigation__link" href="twitter.html">Twitter</a>
+ -->                    <a class="mdl-navigation__link" href="practical.html">Practical</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
-                <div class="page-content">
+                <div class="page-content mdl-grid">
 
-                        <img src="img/tour.png"> 
+                    <img src="img/tour.png"> 
 
-                        <div id="map" style="height: 10em;background:yellow; margin-top: 1em; "></div>
+                    <div id="map" style="height: 10em;background:yellow; margin-top: 1em; "></div>
 
-                        <h5 class="h5_header"> How to get there? </h5> 
+                    <h5 class="h5_header"> How to get there? </h5> 
 
-                            <div class="means">
-                                Subway
-                                <div class="line">
-                                    <b>Line</b>: 2 & 6 - <b>Station</b>: Yser
-                                </div>
+                    <div class="means">
+                        Subway
+                        <div class="line">
+                            <b>Line</b>: 2 & 6 - <b>Station</b>: Yser
+                        </div>
+                    </div>
+
+                    <div class="means">
+                        Tram
+                        <div class="line">
+                            <b>Line</b>: 51 - <b>Stop</b>: Sainctelette
+                        </div>
+                    </div>
+
+                    <div class="means">
+                        Bus - STIB
+                        <div id="stib_lines">
+                            <div class="line">
+                                <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
                             </div>
-
-                            <div class="means">
-                                Tram
-                                <div class="line">
-                                    <b>Line</b>: 51 - <b>Stop</b>: Sainctelette
-                                </div>
+                            <div class="line">
+                                <b>Line</b>: 14, 15 - <b>Stop</b>: Tour & Taxis
                             </div>
-
-                            <div class="means">
-                                Bus - STIB
-                                <div id="stib_lines">
-                                    <div class="line">
-                                        <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
-                                    </div>
-                                    <div class="line">
-                                        <b>Line</b>: 14, 15 - <b>Stop</b>: Tour & Taxis
-                                    </div>
-                                    <div class="line">
-                                        <b>Line</b>: 57, 88 - <b>Stop</b>: Steamers
-                                    </div>
-                                </div>
+                            <div class="line">
+                                <b>Line</b>: 57, 88 - <b>Stop</b>: Steamers
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="means">
-                                Bus - De Lijn
-                                <div id="lijn_lines">
-                                    <div class="line">
-                                        <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
-                                    </div>
-                                    <div class="line">
-                                        <b>Line</b>: 213, 214, 230, 231, 232, 233, 240, 241, 242, 243, 245, 246, 250, 251, 260 - <b>Stop</b>: Molenbeek St Jean-Ribaucourt
-                                    </div>
-                                </div>
+                    <div class="means">
+                        Bus - De Lijn
+                        <div id="lijn_lines">
+                            <div class="line">
+                                <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
                             </div>
+                            <div class="line">
+                                <b>Line</b>: 213, 214, 230, 231, 232, 233, 240, 241, 242, 243, 245, 246, 250, 251, 260 - <b>Stop</b>: Molenbeek St Jean-Ribaucourt
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="means">
-                                Boat: Waterbus
-                                <div id="">
-                                    <div class="line">
-                                        <b>Stop</b>: Sainctelette-Béco
-                                    </div>
-                                </div>
+                    <div class="means">
+                        Boat: Waterbus
+                        <div id="">
+                            <div class="line">
+                                <b>Stop</b>: Sainctelette-Béco
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="means">
-                                Train
-                                <div class="line">
-                                    North Station
-                                </div>
-                            </div>
+                    <div class="means">
+                        Train
+                        <div class="line">
+                            North Station
+                        </div>
+                    </div>
                 </div>
 
-            </main>					
+            </main>
+        </div>
 
-            <script>
-                function toggleVisibility(elementID) {
-                    var elem = document.getElementById(elementID);
-                    var display = elem.style.display;
-                    elem.style.display = display == "block" ? 'none' : "block";
-                }   
-            </script>
+        <script>
+            function toggleVisibility(elementID) {
+                var elem = document.getElementById(elementID);
+                var display = elem.style.display;
+                elem.style.display = display == "block" ? 'none' : "block";
+            }   
+        </script>
 
-            <script>
-                function myMap() {
-                    var mapOptions = {
-                        center: new google.maps.LatLng(50.8641252, 4.3475654),
-                        zoom: 16,
-                        mapTypeId: google.maps.MapTypeId.HYBRID
-                    }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-                } 
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6kuhyoT-rtyejkEq7u99dOYWThO6Stw&callback=myMap"></script>
-
+        <script>
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(50.8641252, 4.3475654),
+                    zoom: 16,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            } 
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6kuhyoT-rtyejkEq7u99dOYWThO6Stw&callback=myMap"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
