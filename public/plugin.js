@@ -222,8 +222,7 @@ Timetable.Renderer = function(tt) {
 
             function appendEvent(event, node) {
                 var hasOptions = event.options !== undefined;
-                var hasURL, hasAdditionalClass, hasDataAttributes = false;
-
+                var hasURL, hasAdditionalClass, hasDataAttributes = false;                
                 if (hasOptions) {
                     hasURL = (event.options.url !== undefined) ? true : false;
                     hasAdditionalClass = (event.options.class !== undefined) ? true : false;
@@ -244,10 +243,49 @@ Timetable.Renderer = function(tt) {
                     }
                 }
 
-                aNode.className = hasAdditionalClass ? 'time-entry ' + event.options.class : 'time-entry';
+                aNode.className = hasAdditionalClass ? 'time-entry ' + event.options.class : 'time-entry';                
                 aNode.style.width = computeEventBlockWidth(event);
+                
                 aNode.style.left = computeEventBlockOffset(event);
                 smallNode.textContent = event.name;
+                // added in order to make modal work                
+                aNode.id = event.options.ModalId;
+                aNode.onclick = popup; 
+            }
+
+            //function that sets the modal text based on the marker pressed
+            function popup(element) {     
+                console.log("it's being called");
+                var info;
+                var numId = parseInt(element.currentTarget.id);
+                $.getJSON("info.json", function(json) {
+                    console.log("getting json");
+                info = json;
+            populateModal(info,numId)});
+                                
+            }   
+
+            function populateModal(info,numId) {
+                // var numId = parseInt(element.currentTarget.id);
+                for(var i = 0, length = info.length; i < length; i++) {
+                    {
+                    if(info[i].id == numId)
+                    {                    
+                        $("#modalHeader").text(info[i].id + ". " + info[i].topic);
+                        $("#modalBody").html(info[i].baseline);
+                        console.log(info[i].times);
+                        var scheduleTimes = '';
+                        info[i].times.forEach(function(element) {
+                            if(scheduleTimes == '')
+                                scheduleTimes = element;
+                            else 
+                                scheduleTimes = scheduleTimes + ' <br> ' + element;
+                        });
+                        $("#modalFooter").html(scheduleTimes);
+                    }
+                    }
+                }
+                modal.style.display = "block";
             }
 
             function computeEventBlockWidth(event) {
