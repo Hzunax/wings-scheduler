@@ -255,7 +255,7 @@ Timetable.Renderer = function(tt) {
 
             //function that sets the modal text based on the marker pressed
             function popup(element) {     
-                console.log("it's being called");
+                console.log("it's being called: " + element.currentTarget.id);
                 var info;
                 var numId = parseInt(element.currentTarget.id);
                 $.getJSON("info.json", function(json) {
