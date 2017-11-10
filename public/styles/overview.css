@@ -90,6 +90,11 @@ img{
     color: #ffffff;
 }
 
+.overview_box a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .text_box{
     font-size: 1.3em;
     background-color: rgb(255, 98, 0); 
