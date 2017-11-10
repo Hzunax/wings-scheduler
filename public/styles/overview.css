@@ -93,5 +93,6 @@ img{
 .text_box{
     font-size: 1.3em;
     background-color: rgb(255, 98, 0); 
+    color: #ffffff;
     padding: 0.5em 0 0.5em 0.5em;
 }
