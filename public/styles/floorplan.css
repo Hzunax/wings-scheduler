@@ -1,5 +1,16 @@
-.map {
+#mapContainer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.map {
+    /*position: relative;*/
+    align-self: center;
+    justify-self: center;
     margin: auto;
     z-index:98; 
     max-height:100%; 
