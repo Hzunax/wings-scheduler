@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 1, 
     "location": 1,
@@ -13,12 +13,7 @@
       "Pawel Siwula"
     ],
     "times": [
-      "15:00 - 15:30",
-      "15:30 - 16:00",
-      "16:00 - 16:30",
-      "16:30 - 17:00",
-      "17:00 - 17:30",
-      "17:30 - 18:00"
+		  "continuous session"
     ],
     "coord": {
       "x": "8%",
@@ -77,7 +72,7 @@
       "Philippe Lanckvrind"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "61%",
@@ -94,7 +89,7 @@
       "Quentin Vajda"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "81%",
@@ -112,7 +107,7 @@
       "Georges Colson"
     ],
     "times": [
-      "free-format"
+		"continuous session"
     ],
     "coord": {
       "x": "81%",
@@ -128,7 +123,7 @@
       "Rosalie Dewulf"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "8%",
@@ -142,7 +137,8 @@
     "baseline": "",
     "contact": [
       "David Follen",
-      "Frederik Meersschaut"
+      "Frederik Meersschaut",
+	  "Frederik Mulkers"
     ],
     "times": [
       "15:00 - 15:50",
@@ -163,7 +159,7 @@
       "Chanumolu Bhargavi"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "81%",
@@ -179,7 +175,9 @@
       "Dafne De Groof"
     ],
     "times": [
-      
+      "15:00 - 15:45",
+	  "16:00 - 16:45",
+	  "17:00 - 17:45"
     ],
     "coord": {
       "x": "81%",
@@ -195,7 +193,7 @@
       "Lieven Merckx (TBC)"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "8%",
@@ -211,7 +209,7 @@
       "Patrice Krakow"
     ],
     "times": [
-      
+       "continuous session"
     ],
     "coord": {
       "x": "81%",
@@ -227,7 +225,7 @@
       "Bart Caris"
     ],
     "times": [
-      "free-format"
+      "continuous session"
     ],
     "coord": {
       "x": "8%",
@@ -253,69 +251,6 @@
     "coord": {
       "x": "81%",
      "y": "6%"
-    }
-  },
-  {
-    "id": 15,
-    "location": 15,
-    "topic": "TPA - CCN",
-    "baseline": "EventBus, SDP, CC",
-    "contact": [
-      "Richard Bras"
-    ],
-    "times": [
-      
-    ],
-    "coord": {
-
-    }
-  },
-  
-  {
-    "id": 16,
-    "location": "High table",
-    "topic": "Hadoop/Spark & distributed computing @ ING BE",
-    "baseline": "",
-    "contact": [
-      "Philippe Lanckvrind",
-      "Cedric Cuypers"
-    ],
-    "times": [
-      "15:10 - 15:55"
-    ],
-    "coord": {
-
-    }
-  },
-    {
-    "id": 17,
-    "location": "High table",
-    "topic": "Machine Learning @ ING BE",
-    "baseline": "",
-    "contact": [
-      "Quentin- Emmanuel Vajda"
-    ],
-    "times": [
-      "16:05 - 16:50"
-    ],
-    "coord": {
-
-    }
-  },
-    {
-    "id": 18,
-    "location": "High table",
-    "topic": "Flink & streaming analytics @ ING BE",
-    "baseline": "EventBus, SDP, CC",
-    "contact": [
-      "Gil De Grove",
-      "Samuël Van Hecken"
-    ],
-    "times": [
-      "17:00 - 17:45"
-    ],
-    "coord": {
-
     }
   }
 ]
