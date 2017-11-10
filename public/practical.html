@@ -68,91 +68,91 @@
                 </nav>
             </div>
             <main class="mdl-layout__content">
-                <div class="page-content mdl-grid">
+                <div class="page-content">
+                    <div class="practical-content">
 
-                    <img src="img/tour.png"> 
+                        <!-- <div>
+                            <img class="mdl-layout--large-screen-only" src="img/tour.png">
+                        </div> -->
 
-                    <div id="map" style="height: 10em;background:yellow; margin-top: 1em; "></div>
+                        <div id="map"></div>
 
-                    <h5 class="h5_header"> How to get there? </h5> 
+                        <div id="transportation">
+                            <h5 class="h5_header"> How to get there? </h5> 
 
-                    <div class="means">
-                        Subway
-                        <div class="line">
-                            <b>Line</b>: 2 & 6 - <b>Station</b>: Yser
+                            <ul>
+                                <li>
+                                    <ul class="means">
+                                        <li>Subway</li>
+                                        <li class="line">
+                                            <b>Line</b>: 2 & 6 - <b>Station</b>: Yser
+                                        </li>
+                                    </ul>
+                                    <ul class="means">
+                                        <li>Tram</li>
+                                        <li class="line">
+                                            <b>Line</b>: 51 - <b>Stop</b>: Sainctelette
+                                        </li>
+                                    </ul>
+                                    <ul class="means">
+                                        <li>Bus - STIB</li>
+                                        <li class="line">
+                                            <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
+                                        </li>
+                                        <li class="line">
+                                            <b>Line</b>: 14, 15 - <b>Stop</b>: Tour & Taxis
+                                        </li>
+                                        <li class="line">
+                                            <b>Line</b>: 57, 88 - <b>Stop</b>: Steamers
+                                        </li>
+                                    </ul>
+                                    <ul class="means">
+                                        <li>Bus - De Lijn</li>
+                                        <li class="line">
+                                            <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
+                                        </li>
+                                        <li class="line">
+                                            <b>Line</b>: 213, 214, 230, 231, 232, 233, 240, 241, 242, 243, 245, 246, 250, 251, 260 - <b>Stop</b>: Molenbeek St Jean-Ribaucourt
+                                        </li>
+                                    </ul>
+                                    <ul class="means">
+                                        <li>Boat: Waterbus</li>
+                                        <li class="line">
+                                            <b>Stop</b>: Sainctelette-Béco
+                                        </li>
+                                    </ul>
+                                    <ul class="means">
+                                        <li>Train</li>
+                                        <li class="line">
+                                            North Station
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
+
                     </div>
 
-                    <div class="means">
-                        Tram
-                        <div class="line">
-                            <b>Line</b>: 51 - <b>Stop</b>: Sainctelette
-                        </div>
-                    </div>
+                    
 
-                    <div class="means">
-                        Bus - STIB
-                        <div id="stib_lines">
-                            <div class="line">
-                                <b>Line</b>: 14, 15, 89 - <b>Stop</b>: Picard
-                            </div>
-                            <div class="line">
-                                <b>Line</b>: 14, 15 - <b>Stop</b>: Tour & Taxis
-                            </div>
-                            <div class="line">
-                                <b>Line</b>: 57, 88 - <b>Stop</b>: Steamers
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="means">
-                        Bus - De Lijn
-                        <div id="lijn_lines">
-                            <div class="line">
-                                <b>Line</b>: 129, 620 - <b>Stop</b>: Ribaucourt
-                            </div>
-                            <div class="line">
-                                <b>Line</b>: 213, 214, 230, 231, 232, 233, 240, 241, 242, 243, 245, 246, 250, 251, 260 - <b>Stop</b>: Molenbeek St Jean-Ribaucourt
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="means">
-                        Boat: Waterbus
-                        <div id="">
-                            <div class="line">
-                                <b>Stop</b>: Sainctelette-Béco
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="means">
-                        Train
-                        <div class="line">
-                            North Station
-                        </div>
-                    </div>
                 </div>
 
             </main>
         </div>
 
         <script>
-            function toggleVisibility(elementID) {
-                var elem = document.getElementById(elementID);
-                var display = elem.style.display;
-                elem.style.display = display == "block" ? 'none' : "block";
-            }   
-        </script>
-
-        <script>
             function myMap() {
+                var location = {lat: 50.8641252, lng: 4.3475654};
                 var mapOptions = {
                     center: new google.maps.LatLng(50.8641252, 4.3475654),
                     zoom: 16,
                     mapTypeId: google.maps.MapTypeId.HYBRID
                 }
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
             } 
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDy6kuhyoT-rtyejkEq7u99dOYWThO6Stw&callback=myMap"></script>
