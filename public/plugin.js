@@ -255,11 +255,11 @@ Timetable.Renderer = function(tt) {
 
             //function that sets the modal text based on the marker pressed
             function popup(element) {     
-                console.log("it's being called");
+                // console.log("it's being called: " + element.currentTarget.id);
                 var info;
                 var numId = parseInt(element.currentTarget.id);
                 $.getJSON("info.json", function(json) {
-                    console.log("getting json");
+                    // console.log("getting json");
                 info = json;
             populateModal(info,numId)});
                                 
@@ -273,7 +273,7 @@ Timetable.Renderer = function(tt) {
                     {                    
                         $("#modalHeader").text(info[i].id + ". " + info[i].topic);
                         $("#modalBody").html(info[i].baseline);
-                        console.log(info[i].times);
+                        // console.log(info[i].times);
                         var scheduleTimes = '';
                         info[i].times.forEach(function(element) {
                             if(scheduleTimes == '')
