@@ -119,24 +119,7 @@
                     modal.style.display = "none";
                 }
             };
-
-            
-            // **** Rotate image code (not working as expected yet)
-
-            // $(window).resize(function(){
-            //     if($(window).width() > $(window).height()) {
-            //         console.log("rotated landscape");
-            //         document.getElementById("map").style.width = "100%";
-            //         document.getElementById("map").style.height = "auto";
-            //         document.getElementById("map").style.transform =  "rotate(90deg)";
-            //     }
-            //     else {
-            //         console.log("rotated portrait");
-            //         document.getElementById("map").style.width = "auto";
-            //         document.getElementById("map").style.height = "100%";
-            //         document.getElementById("map").style.transform =  "rotate(0deg)";
-            //     }
-            //  })  
+        
 
 
 
@@ -163,7 +146,7 @@
                     {                    
                         $("#modalHeader").text(info[i].id + ". " + info[i].topic);
                         $("#modalBody").html(info[i].baseline);
-                        console.log(info[i].times);
+                        // console.log(info[i].times);
                         var scheduleTimes = '';
                         info[i].times.forEach(function(element) {
                             if(scheduleTimes == '')
