@@ -1,0 +1,22 @@
+.mdl-layout--fixed-header>.mdl-layout__header{
+    background-color: #ff6600;
+}
+
+div.timetable{
+    position: absolute;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.twitterfeed{
+    position: absolute;
+    top: 65px;
+    z-index: 99;
+}
+div.mdl-layout__drawer{
+	z-index:10000;
+}
