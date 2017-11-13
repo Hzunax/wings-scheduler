@@ -19,6 +19,15 @@
         <!-- Modal CSS -->
         <link rel="stylesheet" href="styles/modal.css">
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109625947-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-109625947-1');
+        </script>
     </head>
     <body>
         <!-- Optional JavaScript -->
@@ -175,20 +184,15 @@
             new Date(2017, 11, 14, 18, 00), {ModalId: 3});
          
          //Corner 4
-        timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 4', new Date(2017, 11, 14, 15, 10),
-            new Date(2017, 11, 14, 15, 55), {ModalId: 4});
-        timetable.addEvent('Machine Learning', 'Corner 4', new Date(2017, 11, 14, 16, 05),
-            new Date(2017, 11, 14, 16, 50), {ModalId: 4});
-        timetable.addEvent('Flink & streaming analytics', 'Corner 4', new Date(2017, 11, 14, 17, 00),
-            new Date(2017, 11, 14, 17, 45), {ModalId: 4});
-
+        timetable.addEvent('Hadoop & Spark / Machine Learning / Flink', 'Corner 4', new Date(2017, 11, 14, 15, 00),
+            new Date(2017, 11, 14, 18, 00), {ModalId: 4});
 
          //Corner 5
-        timetable.addEvent('Hadoop/Spark & distributed computing', 'Corner 5', new Date(2017, 11, 14, 15, 10),
+        timetable.addEvent('Big data: Hadoop/Spark', 'Corner 5', new Date(2017, 11, 14, 15, 10),
             new Date(2017, 11, 14, 15, 55), {ModalId: 5});
-        timetable.addEvent('Machine Learning', 'Corner 5', new Date(2017, 11, 14, 16, 05),
+        timetable.addEvent('Big data: Machine Learning', 'Corner 5', new Date(2017, 11, 14, 16, 05),
             new Date(2017, 11, 14, 16, 50), {ModalId: 5});
-        timetable.addEvent('Flink & streaming analytics', 'Corner 5', new Date(2017, 11, 14, 17, 00),
+        timetable.addEvent('Big data: Flink', 'Corner 5', new Date(2017, 11, 14, 17, 00),
             new Date(2017, 11, 14, 17, 45), {ModalId: 5});
 
          //Corner 6
