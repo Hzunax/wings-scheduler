@@ -13,11 +13,16 @@
     justify-self: center;
     margin: auto;
     z-index:98; 
-    max-height:100%; 
-    max-width:100%; 
-    width: 100%; 
-    height : auto; 
+    max-height:100%;
+    max-width:100%;
+    width: 100%;
+    height : auto;
     object-fit: contain;
+}
+
+/* IE11: in order to display image normally */
+_:-ms-fullscreen, :root .map {
+    height: 50%;
 }
 
 .marker {

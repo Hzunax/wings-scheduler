@@ -2,12 +2,15 @@
     background-color: #ff6600;
 }
 
-div.mdl-grid{
+div.page-content{
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-div.mdl-cell{
+div.overview_boxes{
     margin: 0;
+    max-width: 650px;
 }
 
 .grey_header{
